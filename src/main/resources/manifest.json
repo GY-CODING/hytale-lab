@@ -1,14 +1,14 @@
 {
     "Group": "Example",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.2",
+    "Name": "GYCODING HYTALE LAB",
+    "Version": "0.0.1",
     "Description": "An example plugin for HyTale!",
     "Authors": [
         {
-            "Name": "It's you!"
+            "Name": "GYCODING"
         }
     ],
-    "Website": "example.org",
+    "Website": "gycoding.com",
     "ServerVersion": "*",
     "Dependencies": {
         

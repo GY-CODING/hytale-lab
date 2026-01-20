@@ -3,6 +3,7 @@ package org.example.plugin;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import org.example.plugin.systems.BlockBreakEventSystem;
 
 import javax.annotation.Nonnull;
 
@@ -21,7 +22,8 @@ public class ExamplePlugin extends JavaPlugin {
 
     @Override
     protected void setup() {
-        LOGGER.atInfo().log("Setting up plugin " + this.getName());
+
         this.getCommandRegistry().registerCommand(new ExampleCommand(this.getName(), this.getManifest().getVersion().toString()));
+        this.getEntityStoreRegistry().registerSystem(new BlockBreakEventSystem());
     }
 }
